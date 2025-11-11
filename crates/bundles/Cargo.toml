@@ -7,7 +7,7 @@ lints.workspace = true
 
 [package]
 name = "tectonic_bundles"
-version = "0.0.0-dev.0" # assigned with cranko (see README)
+version = "0.0.0+20251111"
 authors = ["Peter Williams <peter@newton.cx>"]
 description = """
 Tectonic "bundle" (support file collection) implementations.
@@ -21,10 +21,10 @@ edition = "2021"
 
 [dependencies]
 flate2 = { version = "^1.0.19", default-features = false, features = ["zlib"] }
-tectonic_errors = { path = "../errors", version = "0.0.0-dev.0" }
-tectonic_geturl = { path = "../geturl", version = "0.0.0-dev.0", default-features = false }
-tectonic_io_base = { path = "../io_base", version = "0.0.0-dev.0" }
-tectonic_status_base = { path = "../status_base", version = "0.0.0-dev.0" }
+tectonic_errors = { path = "../errors", version = ">=0.0.0+20251111,<1" }
+tectonic_geturl = { path = "../geturl", version = ">=0.0.0+20251111,<1", default-features = false }
+tectonic_io_base = { path = "../io_base", version = ">=0.0.0+20251111,<1" }
+tectonic_status_base = { path = "../status_base", version = ">=0.0.0+20251111,<1" }
 zip = { version = "4", default-features = false, features = ["deflate"] }
 url = "^2.0"
 

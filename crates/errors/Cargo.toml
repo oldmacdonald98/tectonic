@@ -5,7 +5,7 @@ lints.workspace = true
 
 [package]
 name = "tectonic_errors"
-version = "0.0.0-dev.0"  # assigned with cranko (see README)
+version = "0.0.0+20251111"
 authors = ["Peter Williams <peter@newton.cx>"]
 description = """
 A boxed error type for Tectonic, with supporting utilities.

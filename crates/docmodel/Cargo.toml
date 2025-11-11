@@ -7,7 +7,7 @@ lints.workspace = true
 
 [package]
 name = "tectonic_docmodel"
-version = "0.0.0-dev.0"  # assigned with cranko (see README)
+version = "0.0.0+20251111"
 authors = ["Peter Williams <peter@newton.cx>"]
 description = """
 The Tectonic document model and its serialization into `Tectonic.toml`.
@@ -21,7 +21,7 @@ edition = "2021"
 
 [dependencies]
 serde = { version = "^1.0", features = ["derive"] }
-tectonic_errors = { path = "../errors", version = "0.0.0-dev.0" }
+tectonic_errors = { path = "../errors", version = ">=0.0.0+20251111,<1" }
 toml = { version = "^0.8" }
 
 [package.metadata.internal_dep_versions]

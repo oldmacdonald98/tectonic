@@ -6,7 +6,7 @@ lints.workspace = true
 
 [package]
 name = "tectonic"
-version = "0.0.0-dev.0" # assigned with cranko (see README)
+version = "0.0.0+20251111"
 authors = ["Peter Williams <peter@newton.cx>"]
 description = """
 A modernized, complete, embeddable TeX/LaTeX engine. Tectonic is forked from the XeTeX
@@ -84,19 +84,19 @@ quick-xml = "0.37"
 serde = { version = "^1.0", features = ["derive"], optional = true }
 sha2 = "^0.10"
 clap = { version = "4.5.1", features = ["derive"] }
-tectonic_bridge_core = { path = "crates/bridge_core", version = "0.0.0-dev.0" }
-tectonic_bundles = { path = "crates/bundles", version = "0.0.0-dev.0", default-features = false }
-tectonic_docmodel = { path = "crates/docmodel", version = "0.0.0-dev.0", optional = true }
-tectonic_engine_bibtex = { path = "crates/engine_bibtex", version = "0.0.0-dev.0" }
-tectonic_engine_spx2html = { path = "crates/engine_spx2html", version = "0.0.0-dev.0" }
-tectonic_engine_xdvipdfmx = { path = "crates/engine_xdvipdfmx", version = "0.0.0-dev.0" }
-tectonic_engine_xetex = { path = "crates/engine_xetex", version = "0.0.0-dev.0" }
-tectonic_errors = { path = "crates/errors", version = "0.0.0-dev.0" }
-tectonic_geturl = { path = "crates/geturl", version = "0.0.0-dev.0", default-features = false }
-tectonic_io_base = { path = "crates/io_base", version = "0.0.0-dev.0" }
-tectonic_status_base = { path = "crates/status_base", version = "0.0.0-dev.0" }
-tectonic_xdv = { path = "crates/xdv", version = "0.0.0-dev.0" }
-tectonic_xetex_layout = { path = "crates/xetex_layout", version = "0.0.0-dev.0" }
+tectonic_bridge_core = { path = "crates/bridge_core", version = ">=0.0.0+20251111,<1" }
+tectonic_bundles = { path = "crates/bundles", version = ">=0.0.0+20251111,<1", default-features = false }
+tectonic_docmodel = { path = "crates/docmodel", version = ">=0.0.0+20251111,<1", optional = true }
+tectonic_engine_bibtex = { path = "crates/engine_bibtex", version = ">=0.0.0+20251111,<1" }
+tectonic_engine_spx2html = { path = "crates/engine_spx2html", version = ">=0.0.0+20251111,<1" }
+tectonic_engine_xdvipdfmx = { path = "crates/engine_xdvipdfmx", version = ">=0.0.0+20251111,<1" }
+tectonic_engine_xetex = { path = "crates/engine_xetex", version = ">=0.0.0+20251111,<1" }
+tectonic_errors = { path = "crates/errors", version = ">=0.0.0+20251111,<1" }
+tectonic_geturl = { path = "crates/geturl", version = ">=0.0.0+20251111,<1", default-features = false }
+tectonic_io_base = { path = "crates/io_base", version = ">=0.0.0+20251111,<1" }
+tectonic_status_base = { path = "crates/status_base", version = ">=0.0.0+20251111,<1" }
+tectonic_xdv = { path = "crates/xdv", version = ">=0.0.0+20251111,<1" }
+tectonic_xetex_layout = { path = "crates/xetex_layout", version = ">=0.0.0+20251111,<1" }
 tempfile = "^3.1"
 termcolor = "^1.1"
 tokio = "^1.0"

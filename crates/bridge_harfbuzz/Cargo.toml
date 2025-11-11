@@ -7,7 +7,7 @@ lints.workspace = true
 
 [package]
 name = "tectonic_bridge_harfbuzz"
-version = "0.0.0-dev.0" # assigned with cranko (see README)
+version = "0.0.0+20251111"
 authors = ["Peter Williams <peter@newton.cx>"]
 description = """
 Expose the Harfbuzz C/C++ APIs to Rust/Cargo.
@@ -22,14 +22,14 @@ links = "harfbuzz"
 exclude = ["/harfbuzz/docs/", "/harfbuzz/perf/", "/harfbuzz/test/"]
 
 [dependencies]
-tectonic_bridge_freetype2 = { path = "../bridge_freetype2", version = "0.0.0-dev.0" }
-tectonic_bridge_graphite2 = { path = "../bridge_graphite2", version = "0.0.0-dev.0" }
+tectonic_bridge_freetype2 = { path = "../bridge_freetype2", version = ">=0.0.0+20251111,<1" }
+tectonic_bridge_graphite2 = { path = "../bridge_graphite2", version = ">=0.0.0+20251111,<1" }
 libc = "0.2"
 
 [build-dependencies]
 cc = "^1.0.66"
-tectonic_dep_support = { path = "../dep_support", version = "0.0.0-dev.0" }
-tectonic_cfg_support = { path = "../cfg_support", version = "0.0.0-dev.0" }
+tectonic_dep_support = { path = "../dep_support", version = ">=0.0.0+20251111,<1" }
+tectonic_cfg_support = { path = "../cfg_support", version = ">=0.0.0+20251111,<1" }
 
 [target.'cfg(target_os = "macos")'.dependencies]
 tectonic_mac_core = { path = "../mac_core", version = "0.0.0-dev.0" }

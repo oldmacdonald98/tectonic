@@ -7,7 +7,7 @@ lints.workspace = true
 
 [package]
 name = "tectonic_bridge_graphite2"
-version = "0.0.0-dev.0"  # assigned with cranko (see README)
+version = "0.0.0+20251111"
 authors = ["Peter Williams <peter@newton.cx>"]
 description = """
 Expose the graphite2 library to Rust/Cargo.
@@ -24,7 +24,7 @@ links = "graphite2"
 libc = "0.2"
 
 [build-dependencies]
-tectonic_dep_support = { path = "../dep_support", version = "0.0.0-dev.0" }
+tectonic_dep_support = { path = "../dep_support", version = ">=0.0.0+20251111,<1" }
 
 [package.metadata.internal_dep_versions]
 tectonic_dep_support = "5faf4205bdd3d31101b749fc32857dd746f9e5bc"
